@@ -17,8 +17,22 @@ Frontmatter `color:` (Claude Code UI; Cursor may ignore). The orchestrator **mus
 | `executor-cursor` | green | 🟢 | Execute · Composer |
 | `executor` | blue | 🔵 | Execute · Sonnet |
 | `executor-mecanic` | orange | 🟠 | Mecanic · Haiku (Claude only) |
+| **`direct`** | cyan | ⚡ | Orchestrator resolves — **no subagent** (still Baking) |
+| **gate-out** | — | ⬜ | **No Baking** — normal chat, no metrics |
 
-Programmatic map: `lib/agent-colors.js`.
+Programmatic map: `lib/agent-colors.js` (`directBanner`, `gateOutBanner`, `delegationBanner`).
+
+### Visibility (mandatory)
+
+Announce **before** editing or answering:
+
+| Tier | First line |
+|------|------------|
+| Subagent | `🟣 **Baking → planner** · PLAN` (emoji per agent table) |
+| **Direct** | `⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)` |
+| **Gate-out** | `⬜ **No Baking** · gate-out` — then normal answer; **no** YAML/JSONL |
+
+**Direct ≠ gate-out:** direct still closes with YAML + `runs.jsonl` (`exec_agent: direct`). Gate-out skips metrics entirely.
 
 ## Cursor (`~/.cursor/agents/`)
 

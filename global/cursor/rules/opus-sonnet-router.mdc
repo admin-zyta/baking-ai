@@ -11,7 +11,7 @@ Read **`~/.cursor/opus-sonnet/config.json`**. Then decide:
 
 | Outcome | When | What to do |
 |---------|------|------------|
-| **GATE-OUT** | Pure Q&A, explanation, review-only, opinion, status/meta, no code change requested | **Do not** use Baking. Reply directly. Optional one line: *"Baking not needed here — …"* No handoff, subagents, YAML close, or metrics. |
+| **GATE-OUT** | Pure Q&A, explanation, review-only, opinion, status/meta, no code change requested | **Do not** use Baking. Start with `⬜ **No Baking** · gate-out`. Then reply directly. No handoff, subagents, YAML close, or metrics. |
 | **BAKING** | Implementation / code (feature, fix, refactor, wiring, deploy, create/edit files) | Follow **`ROUTER.md`** + baking skill + **`consumption.md`**. |
 
 **GATE-OUT signals (any of):** *how does*, *what is*, *explain*, *why*, *what do you think*, *review this* (no fix requested), *does it make sense*, *status of*, compare options without *build/implement*.

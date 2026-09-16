@@ -23,9 +23,17 @@ Only create **`.cursor/handoff/`** in the workspace if missing. **No** `.claude/
 | **PLAN** | architecture, multi-file, ambiguity, landing/portfolio/vibe |
 | **PLAN-ONLY** | "plan only", "don't execute", "just plan", "ask before doing anything" | → planner, **without executor** |
 | **PLAN-REVISE** | follow-up question / "change the plan" with an existing handoff | → planner updates it or Baking answers from the handoff |
-| **TRIVIAL** | 2–3 commands, one obvious action | → **direct** (no subagent — cheaper than mecanic) |
+| **TRIVIAL** | 2–3 commands, one obvious action | → **direct** — announce `⚡ **Baking · DIRECT**` before editing; metrics `exec_agent: direct` |
 
 When in doubt → **PLAN**. If they ask for a plan with no code → **PLAN-ONLY**.
+
+### Visibility — DIRECT vs GATE-OUT
+
+| Outcome | First line | Metrics |
+|---------|------------|---------|
+| Gate-out | `⬜ **No Baking** · gate-out` | None |
+| **Direct** | `⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)` | YAML + JSONL |
+| Delegate | emoji banner per `AGENTS.md` | YAML + JSONL |
 
 ### Light stack (v1.5 — Cursor and Claude Code)
 

@@ -45,6 +45,18 @@ Classify every message **before** planner/executor/handoff/metrics:
 
 Explicit **`/baking`** or *use baking* → always **BAKING**, even for PLAN-ONLY.
 
+## Visibility — DIRECT vs GATE-OUT (mandatory)
+
+Users cannot tell "Baking direct" from "Baking not used" unless you announce it **before** acting.
+
+| Outcome | First line in chat | Metrics |
+|---------|-------------------|---------|
+| **GATE-OUT** | `⬜ **No Baking** · gate-out` (+ optional reason) | **None** |
+| **DIRECT** (orchestrator resolves, no subagent) | `⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)` | JSONL with `exec_agent: direct` |
+| **Delegate** | `🩵 **Baking → …**` per agent table (`AGENTS.md`) | JSONL with planner/executor |
+
+**Direct** applies to trivial EXECUTE (copy fix, one field, 2–3 commands) when skipping mecanic/executor is cheaper or avoids edit conflicts. Still write YAML + `runs.jsonl` + `usage`.
+
 **Project memory init:** `baking init-memory` + `/init-memory` (Claude `/init` style).
 
 ## Light stack (v1.5+)

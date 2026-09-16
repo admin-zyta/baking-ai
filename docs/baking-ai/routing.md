@@ -10,7 +10,7 @@ Full reference: [ROUTER.md](../../ROUTER.md) · Cursor: [BAKING-CURSOR.md](../..
 
 First branch: **GATE-OUT** vs **BAKING**.
 
-- **GATE-OUT** — question, explanation, review-only, no code change → direct answer; say *"Baking not needed"* optionally; skip everything below.
+- **GATE-OUT** — question, explanation, review-only, no code change → start with `⬜ **No Baking** · gate-out`; skip everything below.
 - **BAKING** — implementation request or explicit `/baking` / *use baking* → continue.
 
 ```
@@ -52,11 +52,12 @@ First branch: **GATE-OUT** vs **BAKING**.
 
 ## Decision table
 
-| Flow | Signals | Subagent | Model |
-|------|---------|-----------|--------|
-| **GATE-OUT** | Q&A, explain, review-only, no code change | Orchestrator (direct) | Composer/Sonnet — **no** handoff/metrics |
-| **TRIVIAL** | 2–3 commands, status | Orchestrator | Composer/Sonnet |
-| **PLAN** | multi-file, ambiguity, landing | `planner` | Opus / Grok |
+| Flow | Signals | Subagent | Visible banner |
+|------|---------|-----------|----------------|
+| **GATE-OUT** | Q&A, explain, review-only, no code change | — | `⬜ **No Baking** · gate-out` |
+| **DIRECT** | trivial fix, orchestrator edits inline | — (orchestrator) | `⚡ **Baking · DIRECT**` |
+| **TRIVIAL** | alias of DIRECT in docs | — | same as DIRECT |
+| **PLAN** | multi-file, ambiguity, landing | `planner` | `🟣 **Baking → planner**` |
 | **PLAN-DEEP** | "hyper", architecture, ≥2 signals | `planner-hyper` | Fable |
 | **PLAN-ONLY** | "plan only", "don't execute" | planner / hyper | — no exec |
 | **PLAN-REVISE** | "change the plan" | planner updates the `.md` | — |

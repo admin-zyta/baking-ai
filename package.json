@@ -1,6 +1,6 @@
 {
   "name": "@admin-zyta/baking-ai",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "Baking-AI — global planner → executor orchestrator for Cursor and Claude Code",
   "license": "UNLICENSED",
   "bin": {

@@ -2,6 +2,13 @@
 
 Format based on [Keep a Changelog](https://keepachangelog.com/). Versioned in `VERSION` and `config.json` → `bakingVersion`.
 
+## [1.9.4] — 2026-09-16
+
+### Added
+
+- **DIRECT tier visibility** — orchestrator must announce `⚡ **Baking · DIRECT**` before inline fixes; `exec_agent: direct` in metrics. Distinct from **`⬜ **No Baking** · gate-out`** (no metrics). Source: Lore Forge scratchpad handoff.
+- `lib/agent-colors.js` — `directBanner`, `gateOutBanner`.
+
 ## [1.9.3] — 2026-09-15
 
 ### Changed

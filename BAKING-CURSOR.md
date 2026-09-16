@@ -24,9 +24,19 @@ Global subagents: `~/.cursor/agents/` (planner, planner-hyper-cursor, planner-cu
 | **PLAN** | architecture, multi-file, ambiguity, landing/portfolio/vibe |
 | **PLAN-ONLY** | "plan only", "don't execute", "just plan", "ask before doing anything", "just research/design" | → planner, **without executor** |
 | **PLAN-REVISE** | follow-up question about an existing handoff, "change the plan", "add to the plan" | → planner updates the same `.md`, or Baking answers from the handoff |
-| **TRIVIAL** | 2–3 commands, status check | → **resolve it yourself**, no subagents or handoff |
+| **TRIVIAL** | 2–3 commands, status check, copy/one-field fix | → **DIRECT**: orchestrator resolves — announce `⚡ **Baking · DIRECT**` · metrics `exec_agent: direct` |
 
 When in doubt → **PLAN**. If they ask for a plan with no code → **PLAN-ONLY** (don't infer EXECUTE afterward).
+
+### Visibility — DIRECT vs GATE-OUT
+
+| Outcome | Announce **before** acting | Metrics |
+|---------|---------------------------|---------|
+| Gate-out (no Baking) | `⬜ **No Baking** · gate-out` | None |
+| **Direct** (Baking, no subagent) | `⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)` | YAML + JSONL `exec_agent: direct` |
+| Delegate | `🩵 **Baking → …**` per `AGENTS.md` | YAML + JSONL |
+
+**Direct ≠ silent edit.** Users must see that Baking ran at its lowest tier.
 
 ### Light stack (v1.5 — lightweight)
 

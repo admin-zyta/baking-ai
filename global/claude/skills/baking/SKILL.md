@@ -15,7 +15,9 @@ Config: **`~/.cursor/opus-sonnet/config.json`** (typically `claude` profile). Me
 
 Classify **before** subagents, handoff, or metrics.
 
-**GATE-OUT** for pure Q&A, explanation, review-only, or status — no code change requested. Reply directly; optional *"Baking not needed here — …"*. No YAML, JSONL, or handoff.
+**GATE-OUT** for pure Q&A, explanation, review-only, or status — no code change requested. Start with **`⬜ **No Baking** · gate-out`**. No YAML, JSONL, or handoff.
+
+**DIRECT** when the orchestrator resolves trivial EXECUTE without a subagent — start with **`⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)`**. Still close with YAML + JSONL (`exec_agent: direct`).
 
 **Always Baking** for implement/fix/refactor/deploy or explicit **`/baking`** / *use baking*, or when **`.cursor/baking/required.json`** exists in the repo (implementation mandatory).
 

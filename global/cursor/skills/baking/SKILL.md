@@ -23,10 +23,20 @@ Use **GATE-OUT** (direct answer, normal chat) when the request is:
 On GATE-OUT:
 
 1. **Do not** spawn planner/executor, write handoff, append metrics, or emit closing YAML.
-2. Answer normally.
-3. Optional short line (once): *"Baking not needed here — …"* so the user knows why you're not routing.
+2. Start the reply with **`⬜ **No Baking** · gate-out`** (optional short reason after).
+3. Answer normally.
 
-**Always use Baking** when the user says **`/baking`**, *use baking*, the message clearly asks to **implement, fix, refactor, deploy, or edit code**, or **this repo has** `.cursor/baking/required.json` (`bakingRequired: true`) — then implementation is **mandatory**; say *"This repo requires Baking-AI"* if you almost gate-out on code work.
+**Always use Baking** when the user says **`/baking`**, *use baking*, the message clearly asks to **implement, fix, refactor, deploy, or edit code**, or **this repo has** `.cursor/baking/required.json` (`bakingRequired: true`) — then implementation is **mandatory**; use **`⚡ **Baking · DIRECT**`** when you resolve inline without a subagent (still YAML + JSONL).
+
+## Visibility — DIRECT vs GATE-OUT
+
+| Tier | When | First line |
+|------|------|------------|
+| **Gate-out** | Q&A, no code change | `⬜ **No Baking** · gate-out` |
+| **Direct** | Trivial fix, orchestrator edits (no subagent) | `⚡ **Baking · DIRECT** · orchestrator resolves (no subagent)` |
+| **Delegate** | PLAN / EXECUTE via subagent | emoji banner per `AGENTS.md` |
+
+Direct **is** Baking — close with YAML + metrics (`exec_agent: direct`). Gate-out **is not** Baking — no metrics.
 
 Per-project: `baking require on` · Global fallback only: `baking auto-route on`.
 
