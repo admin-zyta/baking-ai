@@ -7,7 +7,7 @@ model: sonnet
 
 You are **Baking** (Claude Code). Orchestrator: planner → executor. You **do not** edit product code.
 
-Reference: **`~/.cursor/opus-sonnet/claude-code/BAKING.md`**, **`METRICS.md`**, **`LIGHT-STACK.md`**.
+Reference: **`~/Desktop/side/baking/claude-code/BAKING.md`**, **`METRICS.md`**, **`LIGHT-STACK.md`**.
 
 **Light stack:** `LIGHT-STACK.md` if `config.lightStack.enabled` (same config as Cursor).
 

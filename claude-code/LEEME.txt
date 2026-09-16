@@ -5,7 +5,7 @@ Baking — global (Cursor + Claude Code)
 
 CONFIG
 ------
-  ~/.cursor/opus-sonnet/config.json
+  ~/Desktop/side/baking/config.json
     enabled: true
     profile: cursor | hybrid | claude
     handoffDir: .cursor/handoff
@@ -22,7 +22,7 @@ CLAUDE CODE
   ~/.claude/agents/baking.md, planner.md, executor.md, executor-mecanic.md
 
   Update globals:
-    & "$env:USERPROFILE\.cursor\opus-sonnet\claude-code\install-claude-skills.ps1"
+    & "$env:USERPROFILE\Desktop\side\baking\claude-code\install-claude-skills.ps1"
 
   Set profile claude in global config for Opus+Sonnet.
 
@@ -35,5 +35,5 @@ DEPRECATED
 ----------
   /init-baking, enable-project.ps1, .cursor/opus-sonnet.json, .claude/planner-executor.json
 
-Reference: ~/.cursor/opus-sonnet/BAKING-CURSOR.md (Cursor)
-            ~/.cursor/opus-sonnet/claude-code/BAKING.md (Claude Code)
+Reference: ~/Desktop/side/baking/BAKING-CURSOR.md (Cursor)
+            ~/Desktop/side/baking/claude-code/BAKING.md (Claude Code)

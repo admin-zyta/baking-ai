@@ -2,13 +2,13 @@
 
 Orchestrator: **Sonnet**. Planner: **Opus** or **Hyper (Fable)**. Executor: **Sonnet** or **Mecanic (Haiku)**. Handoff: `.cursor/handoff/`.
 
-Also read: `~/.cursor/opus-sonnet/ROUTER.md`, `consumption.md`, `creative-brief-bar.md`.
+Also read: `~/Desktop/side/baking/ROUTER.md`, `consumption.md`, `creative-brief-bar.md`.
 
 ---
 
 ## Bootstrap (handoff only)
 
-Baking is **100% global**. Config in `~/.cursor/opus-sonnet/config.json` (`claude` profile for Claude Code end-to-end).
+Baking is **100% global**. Config in `~/Desktop/side/baking/config.json` (`claude` profile for Claude Code end-to-end).
 
 Only create **`.cursor/handoff/`** in the workspace if missing. **No** `.claude/planner-executor.json`.
 
@@ -198,7 +198,7 @@ Brief message to the user + handoff path.
 
 ## Step 4 — Metrics (mandatory)
 
-Read **`~/.cursor/opus-sonnet/METRICS.md`**. Append **one JSON line** to:
+Read **`~/Desktop/side/baking/METRICS.md`**. Append **one JSON line** to:
 
 `<metrics.dir>/runs.jsonl` (default `.cursor/baking/metrics/runs.jsonl`)
 

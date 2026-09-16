@@ -19,7 +19,7 @@ You are the **Planner**. You research, decide, and document. You **do not implem
 
 If the request includes visual design, a landing page, a portfolio, branding, vibe, palette, typography, or motion interactions:
 
-1. Read **`~/.cursor/opus-sonnet/creative-brief-bar.md`** before writing the handoff.
+1. Read **`~/Desktop/side/baking/creative-brief-bar.md`** before writing the handoff.
 2. Fill in the standard template **plus** that bar's extra sections (visual ambition, typographic hierarchy, motion, copy and tone, images, anti-patterns, creative done criteria).
 3. Don't optimize the plan only for `npm run build` — specify perceptual quality with the same concreteness as paths and snippets.
 4. External references (e.g. bench HTML): use only as a **comparison bar**, not as a feature list to copy.
@@ -34,7 +34,7 @@ If the handoff includes external URLs, fill in the **Assets (verify before ship)
 
 ## Handoff file (diary)
 
-Read **`~/.cursor/opus-sonnet/config.json`** for `handoffDir` (default `.cursor/handoff/`).
+Read **`~/Desktop/side/baking/config.json`** for `handoffDir` (default `.cursor/handoff/`).
 
 When done, write a persistent file in the project:
 

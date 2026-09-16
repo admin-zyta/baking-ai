@@ -9,7 +9,7 @@ user-invocable: true
 
 Reference: **`claude-code/BAKING.md`**, **`METRICS.md`**, **`LIGHT-STACK.md`**.
 
-Config: **`~/.cursor/opus-sonnet/config.json`** (typically `claude` profile). Metrics: `runtime: claude-code`.
+Config: **`~/Desktop/side/baking/config.json`** (typically `claude` profile). Metrics: `runtime: claude-code`.
 
 ## Light stack (lightweight — if `lightStack.enabled`)
 

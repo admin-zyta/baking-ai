@@ -1,6 +1,6 @@
 # Planner → Executor — **Baking** orchestrator (global)
 
-Single config: **`~/.cursor/opus-sonnet/config.json`** (`enabled`, `profile`, `handoffDir`).
+Single config: **`~/Desktop/side/baking/config.json`** (`enabled`, `profile`, `handoffDir`).
 
 **Do not** use per-repo `.claude/planner-executor.json`.
 
@@ -14,4 +14,4 @@ Single config: **`~/.cursor/opus-sonnet/config.json`** (`enabled`, `profile`, `h
 
 Edit `profile` in global config: `claude` | `cursor` | `hybrid`
 
-Reference: `~/.cursor/opus-sonnet/claude-code/BAKING.md`
+Reference: `~/Desktop/side/baking/claude-code/BAKING.md`

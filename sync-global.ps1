@@ -1,8 +1,8 @@
-# Deploy Baking globally from versioned repo (~/.cursor/opus-sonnet)
+# Deploy Baking globally from versioned repo (~/Desktop/side/baking)
 # Source: global/cursor → ~/.cursor  |  global/claude → ~/.claude
 
 $ErrorActionPreference = "Stop"
-$repo = Join-Path $env:USERPROFILE ".cursor\opus-sonnet"
+$repo = if ($env:BAKING_HOME) { $env:BAKING_HOME } else { Join-Path $env:USERPROFILE "Desktop\side\baking" }
 $version = Get-Content (Join-Path $repo "VERSION") -Raw
 $version = $version.Trim()
 

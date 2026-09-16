@@ -7,7 +7,7 @@ user-invocable: true
 
 # DEPRECATED → /baking
 
-Global config: `~/.cursor/opus-sonnet/config.json` (`claude` profile if applicable).
+Global config: `~/Desktop/side/baking/config.json` (`claude` profile if applicable).
 
 Don't create `.claude/planner-executor.json`.
 

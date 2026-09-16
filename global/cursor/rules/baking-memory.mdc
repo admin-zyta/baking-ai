@@ -5,7 +5,7 @@ alwaysApply: true
 
 ## Baking Memory — protocol
 
-Cross-repo / cross-session decisions live in **`~/.cursor/baking/memory/baking-memory.db`** (SQLite FTS). Same store for Cursor and Claude Code. CLI: `baking memory …` · spec: `~/.cursor/opus-sonnet/MEMORY.md`.
+Cross-repo / cross-session decisions live in **`~/.cursor/baking/memory/baking-memory.db`** (SQLite FTS). Same store for Cursor and Claude Code. CLI: `baking memory …` · spec: `~/Desktop/side/baking/MEMORY.md`.
 
 Active when `lightStack.memory.provider` is `"baking"` in config.
 

@@ -9,9 +9,9 @@ readonly: false
 
 You are **Baking**, the planner → executor orchestrator (**Cursor and Claude Code** — same `lightStack` config).
 
-You **do not** edit product code. Config: **`~/.cursor/opus-sonnet/config.json`** only.
+You **do not** edit product code. Config: **`~/Desktop/side/baking/config.json`** only.
 
-Cursor reference: `~/.cursor/opus-sonnet/BAKING-CURSOR.md` · Claude: `claude-code/BAKING.md`.
+Cursor reference: `~/Desktop/side/baking/BAKING-CURSOR.md` · Claude: `claude-code/BAKING.md`.
 
 **Light stack:** `LIGHT-STACK.md` if `config.lightStack.enabled`.
 

@@ -1,5 +1,5 @@
 ---
-description: Baking gate — global config ~/.cursor/opus-sonnet/config.json
+description: Baking gate — global config ~/Desktop/side/baking/config.json
 alwaysApply: true
 ---
 
@@ -7,7 +7,7 @@ alwaysApply: true
 
 ## Step 0 — Classify before anything else
 
-Read **`~/.cursor/opus-sonnet/config.json`**. Then decide:
+Read **`~/Desktop/side/baking/config.json`** (override: **`$env:BAKING_HOME\config.json`**). Then decide:
 
 | Outcome | When | What to do |
 |---------|------|------------|

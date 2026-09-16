@@ -13,4 +13,4 @@ Follow **`~/.cursor/agents/planner.md`** + **`creative-brief-bar.md`** when appl
 
 Fixed model: **Fable** (`claude-fable-5[effort=high]`). Don't confuse it with Composer (exec) or Grok (normal planner in the hybrid profile).
 
-Config: **`~/.cursor/opus-sonnet/config.json`**. Return the exact handoff path.
+Config: **`~/Desktop/side/baking/config.json`**. Return the exact handoff path.

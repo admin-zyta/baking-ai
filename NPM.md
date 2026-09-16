@@ -13,8 +13,8 @@ npx @admin-zyta/baking-ai install
 **From GitHub** (no npm):
 
 ```bash
-git clone https://github.com/admin-zyta/baking-ai.git ~/.cursor/opus-sonnet
-cd ~/.cursor/opus-sonnet && node bin/baking.js install
+git clone https://github.com/admin-zyta/baking-ai.git ~/Desktop/side/baking
+cd ~/Desktop/side/baking && node bin/baking.js install
 ```
 
 Or in one line:

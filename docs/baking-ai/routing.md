@@ -58,12 +58,12 @@ First branch: **GATE-OUT** vs **BAKING**.
 | **DIRECT** | trivial fix, orchestrator edits inline | — (orchestrator) | `⚡ **Baking · DIRECT**` |
 | **TRIVIAL** | alias of DIRECT in docs | — | same as DIRECT |
 | **PLAN** | multi-file, ambiguity, landing | `planner` | `🟣 **Baking → planner**` |
-| **PLAN-DEEP** | "hyper", architecture, ≥2 signals | `planner-hyper` | Fable |
-| **PLAN-ONLY** | "plan only", "don't execute" | planner / hyper | — no exec |
-| **PLAN-REVISE** | "change the plan" | planner updates the `.md` | — |
-| **EXECUTE** | handoff + "implement" | `executor-cursor` / `executor` | Composer / Sonnet |
-| **EXECUTE-MECANIC** | mechanical, simple handoff | `executor-mecanic` | Haiku (CC only) |
-| **EXECUTE-FORK** | session debugging, context already loaded | `fork` | inherits parent (CC) |
+| **PLAN-DEEP** | "hyper", architecture, ≥2 signals | `planner-hyper` | `🩷 **Baking → planner-hyper**` |
+| **PLAN-ONLY** | "plan only", "don't execute" | planner / hyper | same as PLAN (no exec) |
+| **PLAN-REVISE** | "change the plan" | planner updates the `.md` | `🟣 **Baking → planner**` |
+| **EXECUTE** | handoff + "implement" | `executor-cursor` / `executor` | `🟢/🔵 **Baking → executor**` |
+| **EXECUTE-MECANIC** | mechanical, simple handoff | `executor-mecanic` | `🟠 **Baking → executor-mecanic**` |
+| **EXECUTE-FORK** | session debugging, context loaded | `fork` | `▶️ **Baking → fork**` |
 
 ---
 

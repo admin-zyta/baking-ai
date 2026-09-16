@@ -45,4 +45,4 @@ baking auto-route on    # all repos without require marker
 baking auto-route off   # default — use require per repo
 ```
 
-Config: `autoRoute.enabled` in `~/.cursor/opus-sonnet/config.json`.
+Config: `autoRoute.enabled` in `~/Desktop/side/baking/config.json`.

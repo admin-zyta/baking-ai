@@ -2,6 +2,14 @@
 
 Format based on [Keep a Changelog](https://keepachangelog.com/). Versioned in `VERSION` and `config.json` → `bakingVersion`.
 
+## [1.10.0] — 2026-09-16
+
+### Changed
+
+- **Repo home** — canonical path `~/Desktop/side/baking` (override with **`BAKING_HOME`**). Removed `~/.cursor/opus-sonnet/` install mirror; config + docs live in the repo.
+- Router rule renamed **`baking-router.mdc`** (replaces `opus-sonnet-router.mdc`).
+- `lib/paths.js` — `bakingHome()`, legacy migration deletes old `.cursor/opus-sonnet` on install.
+
 ## [1.9.4] — 2026-09-16
 
 ### Added
@@ -238,12 +246,12 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). Versioned in `V
 
 ## [1.0.0] — 2026-09-12
 
-First versioned release. Repo: `~/.cursor/opus-sonnet/`.
+First versioned release. Repo: `~/Desktop/side/baking/`.
 
 ### Added
 
 - **Git + VERSION** — versioned source of truth; deploy with `sync-global.ps1`
-- **Single global config** — `~/.cursor/opus-sonnet/config.json` (no per-project install)
+- **Single global config** — `~/Desktop/side/baking/config.json` (no per-project install)
 - **Baking orchestrator** — `/baking`, skills, and agents in Cursor + Claude Code
 - **PLAN-ONLY / PLAN-REVISE** — plan and follow up without an executor until explicitly requested
 - **Closure gates** — `spec` / `craft` / `assets` scores; build ≠ completed

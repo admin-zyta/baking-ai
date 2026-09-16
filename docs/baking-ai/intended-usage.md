@@ -70,7 +70,7 @@ When in doubt → **PLAN**. Better an extra handoff than Opus coding blind.
 
 ## Profiles (one single config)
 
-You edit `"profile"` in `~/.cursor/opus-sonnet/config.json`:
+You edit `"profile"` in `~/Desktop/side/baking/config.json`:
 
 | Profile | Planner | Executor | When |
 |--------|---------|----------|--------|

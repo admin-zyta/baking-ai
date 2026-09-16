@@ -9,4 +9,4 @@ user-invocable: true
 
 Baking is **global**. Use **`/baking`** or *"use baking for …"*.
 
-Config: `~/.cursor/opus-sonnet/config.json` — don't create files in the repo.
+Config: `~/Desktop/side/baking/config.json` — don't create files in the repo.

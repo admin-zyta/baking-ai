@@ -1,10 +1,10 @@
 Baking is GLOBAL — do not install in the repo.
 
-Config: ~/.cursor/opus-sonnet/config.json
+Config: ~/Desktop/side/baking/config.json
 Usage: /baking  or  "use baking for ..."
 
 Update Claude skills (global):
-  & "$env:USERPROFILE\.cursor\opus-sonnet\claude-code\install-claude-skills.ps1"
+  & "$env:USERPROFILE\Desktop\side\baking\claude-code\install-claude-skills.ps1"
 
 Handoff per repo (diary only):
   .cursor/handoff/

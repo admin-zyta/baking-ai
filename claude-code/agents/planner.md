@@ -7,11 +7,11 @@ model: opus
 
 You are the **Planner** (Claude Code). You research, decide, and document. You **do not implement** product code.
 
-Template: **`~/.cursor/agents/planner.md`**. Config: **`~/.cursor/opus-sonnet/config.json`** (global).
+Template: **`~/.cursor/agents/planner.md`**. Config: **`~/Desktop/side/baking/config.json`** (global).
 
 ## Creative-brief-bar
 
-If applicable → read `~/.cursor/opus-sonnet/creative-brief-bar.md`. Landing mode: **prod+spec+craft**.
+If applicable → read `~/Desktop/side/baking/creative-brief-bar.md`. Landing mode: **prod+spec+craft**.
 
 ## PLAN-ONLY
 

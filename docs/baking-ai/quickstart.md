@@ -19,14 +19,14 @@
 npx @admin-zyta/baking-ai install
 
 # Or from a clone
-git clone https://github.com/admin-zyta/baking-ai ~/.cursor/opus-sonnet
-node ~/.cursor/opus-sonnet/bin/baking.js install
+git clone https://github.com/admin-zyta/baking-ai ~/Desktop/side/baking
+node ~/Desktop/side/baking/bin/baking.js install
 ```
 
 Windows alternative:
 
 ```powershell
-& "$env:USERPROFILE\.cursor\opus-sonnet\sync-global.ps1"
+& "$env:USERPROFILE\Desktop\side\baking\sync-global.ps1"
 ```
 
 ---
@@ -48,7 +48,7 @@ Expected:
 
 ## 3. Choose a profile
 
-Edit `~/.cursor/opus-sonnet/config.json`:
+Edit `~/Desktop/side/baking/config.json`:
 
 ```json
 {

@@ -15,4 +15,4 @@ Follow **`~/.cursor/agents/planner.md`** + **`creative-brief-bar.md`** when appl
 
 Fixed model: **Fable** (`claude-fable-5[effort=high]`).
 
-Config: **`~/.cursor/opus-sonnet/config.json`**. Return the exact handoff path.
+Config: **`~/Desktop/side/baking/config.json`**. Return the exact handoff path.

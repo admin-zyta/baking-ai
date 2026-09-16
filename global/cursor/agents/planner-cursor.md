@@ -13,4 +13,4 @@ Follow **`~/.cursor/agents/planner.md`** for scope, handoff template, quality, a
 
 Fixed model: **Grok 4.6** (standard variant, not Fast).
 
-Read config for `handoffDir` from **`~/.cursor/opus-sonnet/config.json`** (global).
+Read config for `handoffDir` from **`~/Desktop/side/baking/config.json`** (global).

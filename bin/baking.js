@@ -45,7 +45,7 @@ Targets:
   ~/.cursor/skills/baking/          Cursor skill
   ~/.cursor/agents/                 Cursor subagents
   ~/.cursor/rules/                  Router gate
-  ~/.cursor/opus-sonnet/            Config + docs
+  ~/Desktop/side/baking/            Config + docs
   ~/.claude/skills/ + agents/       Claude Code
 `;
 
@@ -93,7 +93,8 @@ async function main() {
       console.log(`  ${a.ok ? 'OK' : 'MISSING'}  ${a.file}`);
     }
     console.log('');
-    console.log(`  config.json: ${report.configOk ? 'OK' : 'MISSING'}`);
+    console.log(`  config.json: ${report.configOk ? 'OK' : 'MISSING'} — ${report.configPath || ''}`);
+    console.log(`  baking home: ${report.bakingHome || ''}`);
     console.log(`  skill baking: ${report.skillOk ? 'OK' : 'MISSING'}`);
     if (report.lightStack) {
       console.log('');
@@ -283,7 +284,7 @@ async function main() {
     if (sub === 'on') {
       const r = setAutoRoute(true);
       console.log('Auto-route ON — global fallback for implementation (prefer `baking require on` per repo).');
-      console.log('Rule gate: ~/.cursor/rules/opus-sonnet-router.mdc (run baking install if not updated).');
+      console.log('Rule gate: ~/.cursor/rules/baking-router.mdc (run baking install if not updated).');
       process.exit(r.bakingEnabled ? 0 : 0);
     }
     if (sub === 'off') {
@@ -338,9 +339,13 @@ async function main() {
       console.log(`Baking-AI ${result.version} — installed`);
       console.log(`  Cursor:  ${result.cursorRoot}`);
       console.log(`  Claude:  ${result.claudeRoot}`);
-      console.log(`  Config:  ${result.configRoot}`);
-      if (result.configSkipped) {
-        console.log('  Note: existing config.json — not replaced (use --force-config)');
+      console.log(`  Baking home:  ${result.bakingHome}`);
+      console.log(`  Config:       ${result.configPath}`);
+      if (result.migratedFrom?.removed) {
+        console.log(`  Removed legacy: ${result.migratedFrom.removed}`);
+      } else if (result.migratedFrom?.pendingRemoval) {
+        console.log(`  Legacy still present: ${result.migratedFrom.legacy}`);
+        console.log(`  → ${result.migratedFrom.note}`);
       }
       console.log('');
       const installed = listInstalledAgents();
@@ -349,7 +354,7 @@ async function main() {
       console.log('');
       console.log('Verify: baking doctor');
       console.log('Usage: /baking or "use baking for …"');
-      console.log('Profile: edit ~/.cursor/opus-sonnet/config.json');
+      console.log('Profile: edit ~/Desktop/side/baking/config.json');
       process.exit(0);
     } catch (err) {
       console.error(`baking install failed: ${err.message}`);

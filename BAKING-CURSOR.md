@@ -8,7 +8,7 @@ Also read: `ROUTER.md`, `consumption.md`, `creative-brief-bar.md`.
 
 ## Bootstrap (handoff only)
 
-Baking is **100% global**. Config in `~/.cursor/opus-sonnet/config.json`.
+Baking is **100% global**. Config in `~/Desktop/side/baking/config.json`.
 
 In each workspace, only make sure **`.cursor/handoff/`** (diary) exists. **Do not** create `.cursor/opus-sonnet.json` or copy agents into the repo.
 

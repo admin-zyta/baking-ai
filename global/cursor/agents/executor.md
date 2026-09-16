@@ -11,7 +11,7 @@ You are the **Executor**. You implement per an approved plan or a narrow request
 
 ## Mandatory first step
 
-Read **`~/.cursor/opus-sonnet/config.json`** for `handoffDir` (default `.cursor/handoff/`).
+Read **`~/Desktop/side/baking/config.json`** for `handoffDir` (default `.cursor/handoff/`).
 
 Before editing code:
 

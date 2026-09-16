@@ -29,7 +29,7 @@ Baking is a **router + diary + gates** for Cursor and Claude Code — not a full
 | **Cursor** | `/baking` · *use baking* | `cursor` (Opus plan + Composer exec) |
 | **Claude Code** | `/baking` · *use baking* | `claude` (Opus plan + Sonnet exec) |
 
-One global config: `~/.cursor/opus-sonnet/config.json`. **Do not** install per repo.
+One global config: `~/Desktop/side/baking/config.json`. **Do not** install per repo.
 
 ---
 

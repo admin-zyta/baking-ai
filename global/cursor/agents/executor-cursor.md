@@ -13,7 +13,7 @@ Follow **`~/.cursor/agents/executor.md`** for the first step (read the handoff),
 
 Fixed model: **Composer 2.5** (standard variant; use Fast only if the parent explicitly asks for it).
 
-Read config for `handoffDir` from **`~/.cursor/opus-sonnet/config.json`** (global).
+Read config for `handoffDir` from **`~/Desktop/side/baking/config.json`** (global).
 
 ## Creative landings
 

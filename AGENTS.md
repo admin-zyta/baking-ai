@@ -68,7 +68,7 @@ It should list all the files above as **OK**.
 
 ## Light stack (Cursor + Claude Code)
 
-Same `lightStack` config in `~/.cursor/opus-sonnet/config.json`. See **`LIGHT-STACK.md`**.
+Same `lightStack` config in `~/Desktop/side/baking/config.json`. See **`LIGHT-STACK.md`**.
 
 | Piece | Cursor | Claude Code |
 |-------|--------|-------------|

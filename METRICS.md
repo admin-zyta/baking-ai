@@ -9,7 +9,7 @@ Append-only file per workspace for:
 
 Default: **`.cursor/baking/metrics/runs.jsonl`** (one JSON line per run).
 
-Config: `metrics.dir` and `metrics.enabled` in `~/.cursor/opus-sonnet/config.json`.
+Config: `metrics.dir` and `metrics.enabled` in `~/Desktop/side/baking/config.json`.
 
 Bootstrap: Baking creates the folder if it's missing (like `handoff/`).
 
@@ -111,7 +111,7 @@ From the project root (where `.cursor/baking/metrics/runs.jsonl` lives):
 ```bash
 baking metrics-summary
 # or
-node ~/.cursor/opus-sonnet/bin/baking.js metrics-summary .cursor/baking/metrics/runs.jsonl
+node ~/Desktop/side/baking/bin/baking.js metrics-summary .cursor/baking/metrics/runs.jsonl
 ```
 
 Prints averages per scenario/arm and **savings_pct** per `pair_id` when both have `usage.total_usd`.
@@ -147,7 +147,7 @@ AI-flow bench: copy `runs.jsonl` to `AI-flow/runs/<scenario>/exports/metrics.jso
 
 ## Conclusion cycle (routing + savings)
 
-**Trigger:** every **7 days** *or* every **50 runs** since the last conclusion (whichever comes first). Config in `metrics.review` (`~/.cursor/opus-sonnet/config.json`).
+**Trigger:** every **7 days** *or* every **50 runs** since the last conclusion (whichever comes first). Config in `metrics.review` (`~/Desktop/side/baking/config.json`).
 
 | Command | What it does |
 |---------|----------|

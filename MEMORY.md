@@ -14,7 +14,7 @@ Decisions and conventions that span **repos and sessions** — not a single hand
 | SQLite + FTS5 | `baking-memory.db` (Node 22+ `node:sqlite`) |
 | Fallback | `observations.jsonl` + keyword scoring |
 
-Config: `lightStack.memory.provider: "baking"` in `~/.cursor/opus-sonnet/config.json`.
+Config: `lightStack.memory.provider: "baking"` in `~/Desktop/side/baking/config.json`.
 
 ## CLI
 

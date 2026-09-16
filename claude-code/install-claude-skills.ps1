@@ -1,2 +1,2 @@
 # Install global Claude Code skills from versioned repo
-& (Join-Path $env:USERPROFILE ".cursor\opus-sonnet\sync-global.ps1")
+& (Join-Path $env:USERPROFILE "Desktop\side\baking\sync-global.ps1")

@@ -23,7 +23,7 @@ Baking-AI is **router + handoff + creative gates + optional light stack** — bu
 | **Cursor** | `/baking` · baking skill · *“use baking for…”* | `"profile": "cursor"` |
 | **Claude Code** | `/baking` · baking skill · natural language | `"profile": "claude"` |
 
-Single global config: `~/.cursor/opus-sonnet/config.json`. **No** per-repo Baking install.
+Single global config: `~/Desktop/side/baking/config.json`. **No** per-repo Baking install.
 
 ---
 
@@ -95,7 +95,7 @@ baking auto-route off
 baking auto-route status
 ```
 
-Config: `autoRoute.enabled` in `~/.cursor/opus-sonnet/config.json`.
+Config: `autoRoute.enabled` in `~/Desktop/side/baking/config.json`.
 
 ---
 
@@ -126,16 +126,16 @@ Perceptual quality gate for visual work (craft, assets, prod+spec). See `creativ
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/admin-zyta/baking-ai.git ~/.cursor/opus-sonnet
-cd ~/.cursor/opus-sonnet && node bin/baking.js install
+git clone https://github.com/admin-zyta/baking-ai.git ~/Desktop/side/baking
+cd ~/Desktop/side/baking && node bin/baking.js install
 baking doctor
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/admin-zyta/baking-ai.git $env:USERPROFILE\.cursor\opus-sonnet
-cd $env:USERPROFILE\.cursor\opus-sonnet
+git clone https://github.com/admin-zyta/baking-ai.git $env:USERPROFILE\Desktop\side\baking
+cd $env:USERPROFILE\Desktop\side\baking
 node bin/baking.js install
 node bin/baking.js doctor
 ```
@@ -191,7 +191,7 @@ You get: classification · handoff path (if planned) · closing YAML · line in 
 
 ### Model profiles
 
-Edit `~/.cursor/opus-sonnet/config.json`:
+Edit `~/Desktop/side/baking/config.json`:
 
 ```json
 {
@@ -263,7 +263,7 @@ User → Baking (cheap orchestrator)
 ## Repo (maintainers)
 
 ```
-~/.cursor/opus-sonnet/          ← clone of admin-zyta/baking-ai
+~/Desktop/side/baking/          ← clone of admin-zyta/baking-ai
   global/cursor/                → deploy to ~/.cursor/
   global/claude/                → deploy to ~/.claude/
   bin/baking.js                 → CLI

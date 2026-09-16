@@ -9,7 +9,7 @@ user-invocable: true
 
 **No per-project init needed.** Everything lives at:
 
-- Config: `~/.cursor/opus-sonnet/config.json`
+- Config: `~/Desktop/side/baking/config.json`
 - Cursor: `~/.cursor/skills/baking/`, `~/.cursor/agents/`
 - Claude Code: `~/.claude/skills/baking/`, `~/.claude/agents/`
 - Another machine: `npx @admin-zyta/baking-ai install`
@@ -22,7 +22,7 @@ Baking only creates `.cursor/handoff/` in the workspace if it's missing.
 
 ## Change profile / enabled
 
-Edit **`~/.cursor/opus-sonnet/config.json`** (e.g. `"profile": "cursor"` | `"claude"` | `"hybrid"`).
+Edit **`~/Desktop/side/baking/config.json`** (e.g. `"profile": "cursor"` | `"claude"` | `"hybrid"`).
 
 ## Update globally
 

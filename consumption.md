@@ -1,6 +1,6 @@
 # Consumption — global planner/executor rules
 
-Apply when the router is active (`enabled: true` in **`~/.cursor/opus-sonnet/config.json`** — global, no per-repo overrides). Respect the config's `profile`.
+Apply when the router is active (`enabled: true` in **`~/Desktop/side/baking/config.json`** — global, no per-repo overrides). Respect the config's `profile`.
 
 ## Cursor pools
 
@@ -66,7 +66,7 @@ Apply when the router is active (`enabled: true` in **`~/.cursor/opus-sonnet/con
 
 ## Claude Code — `fork` vs a fresh agent (`executor`/`planner`)
 
-Full Baking workflow (Claude Code): **`~/.cursor/opus-sonnet/claude-code/BAKING.md`**.
+Full Baking workflow (Claude Code): **`~/Desktop/side/baking/claude-code/BAKING.md`**.
 
 Only applies to Claude Code: `fork` (the Agent tool's subagent_type) inherits the full context of
 the current conversation — it shares the prompt cache, rereads nothing. A fresh `executor`/`planner`

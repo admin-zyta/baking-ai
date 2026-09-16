@@ -4,7 +4,7 @@ Cost orchestrator: **Opus plans**, **Sonnet executes**. Every run leaves a persi
 
 ## Active configuration
 
-1. Read **`~/.cursor/opus-sonnet/config.json`** (global — single source).
+1. Read **`~/Desktop/side/baking/config.json`** (global — single source).
 2. There is **no** per-project `.cursor/opus-sonnet.json`; don't mix local overrides.
 3. Resolve the active **profile** from global `profile` (default `cursor`).
 4. Load `planner`, `plannerHyper`, `executor`, and `orchestrator` from `profiles[<profile>]`.
@@ -75,7 +75,7 @@ One config (`lightStack` in `config.json`) for **Cursor and Claude Code**. Detai
 | `cursor` | Opus 5 (`planner`) | Fable (`planner-hyper-cursor`) | Composer 2.5 (`executor-cursor`) | Mixed — **default** |
 | `hybrid` | Grok 4.6 (`planner-cursor`) | Fable (`planner-hyper-cursor`) | Composer 2.5 (`executor-cursor`) | Cursor Models (no regular Opus plan) |
 
-**Global profile** — edit in `~/.cursor/opus-sonnet/config.json`:
+**Global profile** — edit in `~/Desktop/side/baking/config.json`:
 
 ```json
 {
@@ -169,4 +169,4 @@ Respect `consumption.maxParallelSubagents` (default 2).
 
 - **Never** paraphrase the plan to the executor: only the **file path**.
 - Subagents with `force-default-model: true` in `~/.cursor/agents/`.
-- Also apply `~/.cursor/opus-sonnet/consumption.md`.
+- Also apply `~/Desktop/side/baking/consumption.md`.
